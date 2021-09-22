@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Laina's Personal Website</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Poiret+One&display=swap');
+    </style>
+</head>
+<body>
+<div class="everything" id=blur>
+        <div class="header">
+                    <div class="contain">
+                        <a href="#" onclick="toggle()"><img src="./mail.png" alt="mail logo"></a>
+                    </div>
+        <!-- HEADER ITEMS-->
+                        <div class="header-about">
+                            <a class ="items-header" href="#about">About</a>
+                        </div>
+                        <div class="header-skills">
+                            <a class ="items-header" href="#skills">Skills</a>
+                        </div>
+                        <div class="header-portfolio">
+                            <a class ="items-header" href="#portfolio">Portfolio</a>
+                        </div>
+                        <div class="header-contact">
+                            <a class ="items-header" href="#contact">Contact</a>
+                        </div>
+            <h1 class="h_name">LAINA NGUYEN</h1>
+            <h2>Computer Science | Student Athlete | Front End Developer</h2>
+    <!-- END OF HEADER ITEMS -->
+    <!-- LINKEDIN AND GITHUB LOGOS -->
+            <p class="logo-github">
+            <a href="https://github.com/lainanguyen" target="_blank"><img src="./github.png" alt="github logo"></a>
+            </p>
+            <p class="logo-linkedin">
+            <a href="https://www.linkedin.com/in/laina-nguyen-b39153206/" target="_blank"><img src="./linkedin.png"
+                    alt="linkedin logo"></a>
+            </p>
+    <!-- END OF LINKEDIN AND GITHUB LOGOS -->
+    <div class="down">
+        <a href="#about">
+            <img src="./downbutton.png" alt="down arrow icon png">
+        </a>
+    </div>
+        </div>
+
+    <script type="text/javascript">
+        function toggle(){
+            var blur = document.getElementById('blur');
+            blur.classList.toggle('active');
+            var popup = document.getElementById('popup');
+            popup.classList.toggle('active');
+        }
+    </script>
+
+
+    <div class="about" id="about">
+        <h1 class="h_about">ABOUT ME</h3>
+            <div class="profileimage">
+                <img src="./laina.jpeg" alt="laina nguyen" width="320" height="430">
+            </div>
+            <p class="about_paragraph">
+                Hi! My name is Laina Nguyen. It's great to meet you. I am currently a sophomore attending Cairn University.
+                My main focus is on front end development.
+            </p>
+            <br>
+            <p class="about_paragraph_2">
+                I am currently seeking a remote internship or one around the Philadelphia area. If you think I would be a
+                good fit, please leave a note and let's chat!
+            </p>
+            <div class="resume">
+                <a href="resume.pdf" download>resume.pdf</a>
+            </div>
+    </div>
+
+    <div class="skills" id="skills">
+        <h1 class="h_skills">SKILLS</h1>
+        <h3 class="h3_skills">constantly striving for improvement</h3>
+        <div class="skillsbar">
+            <li>
+                <h3>Python</h3>
+                <span class="bar">
+                    <span class="python"></span>
+                </span>
+            </li>
+            <li>
+                <h3>HTML</h3>
+                <span class="bar">
+                    <span class="html"></span>
+                </span>
+            </li>
+            <li>
+                <h3>CSS</h3>
+                <span class="bar">
+                    <span class="css"></span>
+                </span>
+            </li>
+            <li>
+                <h3>Javascript</h3>
+                <span class="bar">
+                    <span class="javascript"></span>
+                </span>
+            </li>
+            <li>
+                <h3>MySql</h3>
+                <span class="bar">
+                    <span class="mysql"></span>
+                </span>
+            </li>
+            <li>
+                <h3>Java</h3>
+                <span class="bar">
+                    <span class="java"></span>
+                </span>
+            </li>
+        </div>
+    </div>
+
+    <div class="portfolio" id="portfolio">
+        <h1 class="h_portfolio">PORTFOLIO</h1>
+        <h3 class="h3_portfolio">a look into some of my projects</h3>
+        <div class="portfolio-content">
+            this is my first project lol
+        </div>
+    </div>
+
+    <div class="contact" id="contact">
+        <h1 class="h_contact">LET'S <span>CONNECT</span>.</h1>
+        <h2>i'd love to get to know you</h2>
+        <div class="contact-sendmail">
+            <img src="./sendmail.png" alt="paper plane icon png">
+            <h4>Send Me Mail</h4>
+            <p>Cairn U Mail Room <br>
+                200 Manor Ave <br>
+                Langhorne, PA 19047
+            </p>
+        </div>
+        <div class="contact-gmail">
+            <img src="./gmail.png" alt="email icon png">
+            <h4>Email Me At</h4>
+            <a href="mailto:lainanguyen7@gmail.com">lainanguyen7@gmail.com</a>
+        </div>
+        <div class="contact-linkedin">
+            <img src="./linkedincontact.png" alt="linkedin icon png">
+            <h4>Connect On</h4>
+            <a href="#">LinkedIn Profile</a>
+        </div>
+        <div class="up">
+            <a href="#">
+                <img src="./up.png" alt="up arrow icon png">
+            </a>
+        </div>
+    </div>
+    
+</div>
+<div class="popup" id="popup">
+    <div class="popup-contactform">
+        <form action="index.html">
+            <h1>leave a note</h1>
+            <div class="input-container focus">
+                <input type="text" name="name" class="input">
+                <label for="">your name</label>
+                <span>your name</span>
+            </div>
+            <div class="input-container">
+                <input type="email" name="email" class="input">
+                <label for="">email address</label>
+                <span>email address</span>
+            </div>
+            <div class="input-container textarea">
+                <textarea type="message" name="message" class="input"></textarea>
+                <label for="">message</label>
+                <span>message</span>
+            </div>
+            <input type="submit" value="send" class="btn">
+        </form>
+    </div>
+    <a href="#" class="closebutton" onclick="toggle()">close</a>
+</div>
+</body>
+
+</body>
+</html>
